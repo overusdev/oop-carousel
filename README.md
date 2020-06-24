@@ -11,5 +11,5 @@
 
 ##### gh-pages`s url
 
-> [https://overusdev.github.io/store/public/](https://overusdev.github.io/store/public/)
+> [hosted](https://overusdev.github.io/carousel/public/)
 
