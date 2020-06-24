@@ -8,16 +8,8 @@
     "build": "webpack",
     "start": "webpack-dev-server --open"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/overusdev/store.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/overusdev/store/issues"
-  },
-  "homepage": "https://github.com/overusdev/store#readme",
   "devDependencies": {
     "css-loader": "3.5.2",
     "less": "^3.11.1",
