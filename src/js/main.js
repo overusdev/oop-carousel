@@ -1,3 +1,4 @@
+'use_strict';
 import { Carousel } from "./carousel";
 
 const carousel = new Carousel({

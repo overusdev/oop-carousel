@@ -1,26 +1,23 @@
 export class CarouselFrame {
-    constructor(settings, slides) {
+    constructor(settings) {
         this._settings = settings;
         this._element = document.querySelector(this._settings.element);
         this._slides = this._element.children;
     }
 
     slidesStyles() {
-
-        for (let index = 0; index < this._slides.length; index++) {
-            const slide = this._slides[index];
-            slide.style.width = '100%';
-        }
-        // const slides = this._slides;
-        // slides.forEach(element => {
-        //    console.log(element); 
-        // });
+        const slides = this._slides;
+        Object.keys(slides).forEach(slide => {
+            const elements = slides[slide];
+            elements.style.width = '100%';
+        });
     }
 
 }
 
 export class Carousel extends CarouselFrame {
     init() {
+        console.log(this);
         this.slidesStyles();
     }
 }
