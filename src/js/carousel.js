@@ -7,8 +7,8 @@ export class CarouselFrame {
 
     slidesStyles() {
         const slides = this._slides;
-        Object.keys(slides).forEach(slide => {
-            const elements = slides[slide];
+        Object.keys(slides).forEach(index => {
+            const elements = slides[index];
             elements.style.width = '100%';
         });
     }
