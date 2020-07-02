@@ -18,10 +18,11 @@ export class CarouselFrame {
         const wrapper = this._slidesWrapper;
         const inner = this._slidesInner;
 
-        slides.forEach(function (item) {
+        slides.forEach(function (item, i) {
             wrapper.appendChild(inner);
             inner.appendChild(item);
             item.classList.add('carousel__img');
+            inner.style.width = (item.offsetWidth * i)  + 'px';
         });
     }
 
