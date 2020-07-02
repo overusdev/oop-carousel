@@ -2,7 +2,7 @@ export class CarouselFrame {
     constructor(settings) {
         this._settings = settings;
         this._element = document.querySelector(this._settings.element);
-        this._slides = [].slice.call(this._element.children);
+        this._slides = Array.from(this._element.children);
         this._slidesWrapper = document.createElement('div');
         this._slidesInner = document.createElement('div');
     }
@@ -18,11 +18,11 @@ export class CarouselFrame {
         const wrapper = this._slidesWrapper;
         const inner = this._slidesInner;
 
-        slides.forEach(function (item, i) {
+        slides.forEach((item, i) => {
             wrapper.appendChild(inner);
             inner.appendChild(item);
             item.classList.add('carousel__img');
-            inner.style.width = (item.offsetWidth * i)  + 'px';
+            // inner.style.width = (item.offsetWidth * i)  + 'px';
         });
     }
 
